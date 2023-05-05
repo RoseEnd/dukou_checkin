@@ -86,8 +86,8 @@ Future<void> sendCheckinMessage(String serverKey, String msg) async {
   await Dio().get(
     'https://sctapi.ftqq.com/$serverKey.send',
     queryParameters: {
-      'title': 'Dukou签到:' + msg,
-      'desp': msg,
+      'title': 'DK:' + msg,
+      'desp': 'DuKou签到:' + msg,
     },
   );
 }
